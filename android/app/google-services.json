@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "803155168338",
+    "firebase_url": "https://mobil-c5c87.firebaseio.com",
+    "project_id": "mobil-c5c87",
+    "storage_bucket": "mobil-c5c87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803155168338:android:e7c423e195e219ef69e38b",
+        "android_client_info": {
+          "package_name": "com.mobil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803155168338-31of5cnbbpon57ck8ds9ehnvc6pm0bbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpmijlC1HkKyqZfGRED90YlIpsXuRMg6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803155168338-31of5cnbbpon57ck8ds9ehnvc6pm0bbi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

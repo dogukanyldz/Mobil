@@ -1,44 +1,50 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View} from 'react-native';
+import {createStackNavigator} from 'react-navigation-stack';
+import {createAppContainer} from 'react-navigation';
 
-import React from 'react';
-import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import SplashPage from './src2/containers/SplashPage';
+import SignUp from './src2/containers/Signup';
+import Login from './src2/containers/Login';
+import Home from './src2/containers/Home';
+import App2 from './App2'
 
-import {ExchangeDroid} from './src/App';
-
-const APP_BACKGROUND_COLOR = '#5bdfc3';
-
-const App = () => {
-  return (
-    <>
-      <StatusBar backgroundColor={APP_BACKGROUND_COLOR} />
-      <SafeAreaView style={styles.safeAreaView}>
-        <LinearGradient
-          colors={['#5bdfc3', '#2e9696']}
-          style={styles.container}>
-          <ExchangeDroid />
-        </LinearGradient>
-      </SafeAreaView>
-    </>
-  );
-};
-
-export const styles = StyleSheet.create({
-  safeAreaView: {backgroundColor: APP_BACKGROUND_COLOR},
-  container: {
-    height: '100%',
-    backgroundColor: APP_BACKGROUND_COLOR,
-    display: 'flex',
-    flexDirection: 'column',
-    paddingVertical: 60,
-    paddingTop: 20,
+const App = createStackNavigator(
+  {
+    SplashPage: {
+      screen: SplashPage,
+      navigationOptions: {
+        header: null,
+      },
+    },
+    SignUp: {
+      screen: SignUp,
+      navigationOptions: {
+        header: null,
+      },
+    },
+    Login: {
+      screen: Login,
+      navigationOptions: {
+        header: null,
+      },
+    },
+    App2: {
+      screen: App2,
+      navigationOptions: {
+        header: null,
+      },
+    },
+    Home: {
+      screen: Home,
+      navigationOptions: {
+        header: null,
+      },
+    },
   },
-});
+  {
+    initialRouteName: 'Login',
+  },
+);
 
-export default App;
+export default createAppContainer(App);
